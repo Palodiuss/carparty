@@ -1,0 +1,139 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+
+/*	Pricing
+-----------------------------------------------------------------*/
+.price-wrap {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0px 25px;
+	margin: 0 0 20px;
+}
+
+.price-header {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-ms-flex-align: baseline;
+	align-items: baseline;
+	position: relative;
+	margin: 0 0 13px;
+}
+
+.price-name {
+	padding-right: 10px;
+}
+
+.price-name a {
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	color: #bF9456;
+	font-family: 'PT Sans Caption';
+}
+
+.price-dots {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+	.price-dots {
+		display: none;
+	}
+}
+
+.separator-dots {
+	width: 100%;
+	border-bottom: 1px dashed #333;
+}
+
+.price-price {
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'PT Serif', serif;
+	padding-left: 10px;
+}
+
+p.price-desc {
+	font-size: 14px;
+	color: #888;
+}
+
+.product .product-image a.shop-icon {
+	width: 50px;
+	height: 50px;
+	top: 50%;
+	left: 50%;
+	margin-top: -25px;
+	margin-left: -25px;
+	font-size: 22px;
+	line-height: 1;
+	-webkit-transition: top .3s ease;
+	-o-transition: top .3s ease;
+	transition: top .3s ease;
+}
+
+.product .product-image a.shop-icon i {
+	padding: 15px;
+	background-color: #bF9456;
+	color: #111;
+	border-radius: 50%;
+	-webkit-transition: background-color .3s ease;
+	-o-transition: background-color .3s ease;
+	transition: background-color .3s ease;
+}
+
+.product .product-image a.shop-icon:hover i { background-color: #FFF; }
+
+.product-title h3 a {
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+.product-desc {
+	border-bottom: 2px dashed #ededed;
+	border-left: 2px dashed #ededed;
+	border-right: 2px dashed #ededed;
+}
+
+.product-price del {
+	color: #BBB;
+	font-weight: 700;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#logo a,
+.menu-link,
+.mega-menu-style-2 .mega-menu-title > .menu-link,
+.top-search-form input,
+.entry-link,
+.entry.entry-date-section span,
+.button.button-desc,
+.fbox-content h3,
+.tab-nav-lg li a,
+.counter,
+label,
+.widget-filter-links li a,
+.nav-tree li a,
+.wedding-head,
+.font-primary { font-family: 'PT Sans Caption', sans-serif !important; }
+
+

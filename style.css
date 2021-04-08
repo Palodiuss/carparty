@@ -358,7 +358,7 @@ span.middot {
 
 .border-f5 { border-color: #F5F5F5 !important; }
 
-.col-padding { padding: 4rem; }
+.col-padding { padding: 2rem; }
 
 .notextshadow { text-shadow: none !important; }
 
@@ -376,7 +376,7 @@ span.middot {
 .bg-color,
 .bg-color #header-wrap { background-color: #1ABC9C !important; }
 
-.color { color: #1ABC9C !important; }
+.color { color: #bc9153 !important;}
 
 .border-color { border-color: #1ABC9C !important; }
 
@@ -1802,6 +1802,8 @@ a.h-text-dark:hover {
 	.col-mb-md-80 > [class*="col-"] {
 		padding-bottom: 80px;
 	}
+
+	.col-padding { padding: 4rem; }
 }
 
 @media (min-width: 992px) {
@@ -10043,7 +10045,7 @@ body:not(.device-touch) .button.button-full strong {
 
 .fbox-effect .fbox-icon i:hover,
 .fbox-effect:hover .fbox-icon i {
-	background-color: #333;
+	background-color: #bc9153;
 	color: #FFF;
 }
 
@@ -12551,6 +12553,7 @@ blockquote.float-right {
 	z-index:1;
 	width: 100%;
 	touch-action: manipulation;
+	margin-bottom: 30px;
 }
 
 .owl-carousel .owl-stage {

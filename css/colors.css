@@ -64,7 +64,7 @@ h6 > span:not(.nocolor):not(.badge),
 .dark .product-title h3 a:hover,
 .dark .single-product .product-title h2 a:hover,
 .dark .product-price ins,
-.dark .tab-nav-lg li.ui-tabs-active a { color: #8a0206; }
+.dark .tab-nav-lg li.ui-tabs-active a { color: #bc9153; }
 
 .color,
 .h-text-color:hover,
@@ -74,7 +74,7 @@ a.h-text-color:hover,
 .tagcloud a:hover,
 .nav-tree li:hover > a,
 .nav-tree li.current > a,
-.nav-tree li.active > a { color: #8a0206 !important; }
+.nav-tree li.active > a { color: #bc9153 !important; }
 
 .top-cart-number::before,
 #page-menu-wrap,
@@ -120,7 +120,7 @@ input.switch-toggle-flat:checked + label:after,
 .dark #gotoTop:hover,
 .dark input.switch-toggle-round:checked + label::before,
 .dark input.switch-toggle-flat:checked + label,
-.dark input.switch-toggle-flat:checked + label::after { background-color: #8a0206; }
+.dark input.switch-toggle-flat:checked + label::after { background-color: #333; }
 
 .bg-color,
 .bg-color #header-wrap,
@@ -220,7 +220,7 @@ input.switch-toggle-flat:checked + label:after,
 
 	.sub-menu-container .menu-item:hover > .menu-link,
 	.mega-menu-style-2 .mega-menu-title > .menu-link:hover,
-	.dark .mega-menu-style-2 .mega-menu-title:hover > .menu-link { color: #8a0206; }
+	.dark .mega-menu-style-2 .mega-menu-title:hover > .menu-link { color: #bc9153; }
 
 	.style-3 .menu-container > .menu-item.current > .menu-link,
 	.sub-title .menu-container > .menu-item:hover > .menu-link::after,
@@ -228,11 +228,11 @@ input.switch-toggle-flat:checked + label:after,
 	.page-menu-sub-menu,
 	.dots-menu .page-menu-item.current > a,
 	.dots-menu .page-menu-item div,
-	.dark .style-3 .menu-container > .menu-item.current > .menu-link { background-color: #8a0206; }
+	.dark .style-3 .menu-container > .menu-item.current > .menu-link { background-color: #bc9153; }
 
 	.style-4 .menu-container > .menu-item:hover > .menu-link,
 	.style-4 .menu-container > .menu-item.current > .menu-link,
-	.dots-menu.dots-menu-border .page-menu-item.current > a { border-color: #8a0206; }
+	.dots-menu.dots-menu-border .page-menu-item.current > a { border-color: #bc9153; }
 
 	.sub-menu-container,
 	.mega-menu-content,

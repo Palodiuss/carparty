@@ -27,6 +27,10 @@
 	margin: 0 0 13px;
 }
 
+.price-header a{
+	color: #eee;
+}
+
 .price-name {
 	padding-right: 10px;
 }
@@ -36,7 +40,6 @@
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 400;
-	color: #bF9456;
 	font-family: 'PT Sans Caption';
 }
 
@@ -55,13 +58,12 @@
 
 .separator-dots {
 	width: 100%;
-	border-bottom: 1px dashed #333;
+	border-bottom: 1px dashed #888;
 }
 
 .price-price {
 	font-size: 20px;
 	font-weight: 700;
-	font-family: 'PT Serif', serif;
 	padding-left: 10px;
 }
 
@@ -113,27 +115,6 @@ p.price-desc {
 	font-weight: 700;
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-#logo a,
-.menu-link,
-.mega-menu-style-2 .mega-menu-title > .menu-link,
-.top-search-form input,
-.entry-link,
-.entry.entry-date-section span,
-.button.button-desc,
-.fbox-content h3,
-.tab-nav-lg li a,
-.counter,
-label,
-.widget-filter-links li a,
-.nav-tree li a,
-.wedding-head,
-.font-primary { font-family: 'PT Sans Caption', sans-serif !important; }
-
-
+.text-shadow {
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.8);
+}

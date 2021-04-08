@@ -126,7 +126,7 @@
 		</header><!-- #header end -->
 
 		<section id="slider"
-			class="slider-element slider-parallax swiper_wrapper min-vh-60 min-vh-md-100 include-header">
+			class="slider-element slider-parallax swiper_wrapper min-vh-100 include-header">
 			<div class="slider-inner">
 
 				<div class="swiper-container swiper-parent">
@@ -136,7 +136,7 @@
 								<div class="slider-caption slider-caption-center">
 									<h2 data-animate="fadeInUp">CAR PARTY</h2>
 									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Nowa
-										alternatywa na Krakowskim rynku przewozu osób oraz ich samochodów.</p>
+										alternatywa na krakowskim rynku przewozu osób oraz ich samochodów.</p>
 								</div>
 							</div>
 							<div class="swiper-slide-bg" style="background-image: url('images/slider/swiper/x6.jpg');">
@@ -151,17 +151,16 @@
 										po niego wrócisz następnego dnia.</p>
 								</div>
 							</div>
-							<div class="video-wrap">
-								<video poster="images/videos/explore-poster.jpg" preload="auto" loop autoplay muted>
+							<div class="video-wrap no-placeholder">
+								<video poster="images/videos/explore-poster.jpg" preload="auto" loop autoplay muted playsinline>
 									<source src='images/videos/video.mp4' type='video/mp4' />
-									<source src='images/videos/explore.webm' type='video/webm' />
 								</video>
 								<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
 							</div>
 						</div>
 						<div class="swiper-slide dark">
 							<div class="container clearfix">
-								<div class="slider-caption" style="margin-top: -70px">
+								<div class="slider-caption slider-caption-center" style="margin-top: -40px">
 									<h2 data-animate="fadeInUp">Bezpieczeństwo</h2>
 									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Nasi kierowcy
 										posiadają wieloletnie doświadczenie dlatego nie musisz się bać o swój samochód.
@@ -189,11 +188,9 @@
 		============================================= -->
 		<section id="content">
 
-			<div class="content-wrap">
-
 				<!-- About Section
 				============================================= -->
-				<div id="about" class="section m-0 bg-transparent page-section" style="padding-top: 150px">
+				<div id="about" class="m-0 bg-transparent page-section" style="padding-top: 150px">
 					<div class="container clearfix">
 						<div class="row clearfix">
 							<div class="col-md-3 col-6 d-none d-md-block">
@@ -218,13 +215,15 @@
 					</div>
 				</div>
 
-				<div class="container clearfix" id="oferta" style="padding: 150px 0">
+				<div class="line"></div>
+
+				<div class="container clearfix bottommargin" id="oferta">
 					<div class="row col-mb-50">
 
 						<div class="col-sm-6 col-lg-4">
 							<div class="feature-box fbox-effect">
 								<div class="fbox-icon">
-									<a href="#"><i class="icon-warehouse i-alt"></i></a>
+									<i class="icon-warehouse i-alt"></i>
 								</div>
 								<div class="fbox-content">
 									<h3>Odwiezienie auta</h3>
@@ -236,7 +235,7 @@
 						<div class="col-sm-6 col-lg-4">
 							<div class="feature-box fbox-effect">
 								<div class="fbox-icon">
-									<a href="#"><i class="icon-plane-departure i-alt"></i></a>
+									<i class="icon-plane-departure i-alt"></i>
 								</div>
 								<div class="fbox-content">
 									<h3>Transfer lotniskowy</h3>
@@ -248,7 +247,7 @@
 						<div class="col-sm-6 col-lg-4">
 							<div class="feature-box fbox-effect">
 								<div class="fbox-icon">
-									<a href="#"><i class="icon-percent i-alt"></i></a>
+									<i class="icon-percent i-alt"></i>
 								</div>
 								<div class="fbox-content">
 									<h3>Dowóz alkoholu</h3>
@@ -260,7 +259,7 @@
 						<div class="col-sm-6 col-lg-4">
 							<div class="feature-box fbox-effect">
 								<div class="fbox-icon">
-									<a href="#"><i class="icon-line-package i-alt"></i></a>
+									<i class="icon-line-package i-alt"></i>
 								</div>
 								<div class="fbox-content">
 									<h3>Przesyłki kurierskie</h3>
@@ -272,7 +271,7 @@
 						<div class="col-sm-6 col-lg-4">
 							<div class="feature-box fbox-effect">
 								<div class="fbox-icon">
-									<a href="#"><i class="icon-church i-alt"></i></a>
+									<i class="icon-church i-alt"></i>
 								</div>
 								<div class="fbox-content">
 									<h3>Kierowca weselny</h3>
@@ -285,7 +284,7 @@
 						<div class="col-sm-6 col-lg-4">
 							<div class="feature-box fbox-effect">
 								<div class="fbox-icon">
-									<a href="#"><i class="icon-line-tool i-alt"></i></a>
+									<i class="icon-line-tool i-alt"></i>
 								</div>
 								<div class="fbox-content">
 									<h3>Myjnia / Serwis</h3>
@@ -297,6 +296,8 @@
 
 					</div>
 
+					
+
 					<div class="clear"></div>
 				</div>
 				<div class="clear"></div>
@@ -306,19 +307,19 @@
 				</div>
 
 				<div id="cennik" class="container bottommargin dark clearfix" style="margin-top: -500px">
-					<div class="heading-block bottommargin-lg center clearfix">
+					<div class=" heading-block bottommargin-lg center clearfix" style="text-shadow: 1px 1px 1px rgba(0,0,0,0.2);">
 						<img src="images/wallet.svg" alt="Image" height="40" style="margin-bottom: 20px">
-						<h2>Cennik</h2>
-						<h5>(płatność gotówką)</h5>
+						<h2 class="text-shadow">Cennik</h2>
+						<h5 class="text-shadow">(płatność gotówką)</h5>
 					</div>
 
 					<!-- Price Items
 					============================================= -->
-					<div class="row col-padding clearfix" style="background-color: #f3f3f3">
+					<div class="row col-padding clearfix white" style="background-color: #333">
 						<div class="col-lg-6 price-wrap">
 							<div class="price-header">
 								<div class="price-name">
-									<a href="#" class="color">Pierwsze 3km</a>
+									<a>Pierwsze 3km</a>
 								</div>
 								<div class="price-dots">
 									<span class="separator-dots"></span>
@@ -332,7 +333,7 @@
 						<div class="col-lg-6 price-wrap">
 							<div class="price-header">
 								<div class="price-name">
-									<a href="#" class="color">Każdy kolejny km</a>
+									<a>Każdy kolejny km</a>
 								</div>
 								<div class="price-dots">
 									<span class="separator-dots"></span>
@@ -343,12 +344,12 @@
 								harum officia eaque nobis ut.</p>
 						</div>
 
-						<div class="w-100 clear"></div>
+
 
 						<div class="col-lg-6 price-wrap">
 							<div class="price-header">
 								<div class="price-name">
-									<a href="#" class="color">Wyjazd poza Kraków</a>
+									<a>Wyjazd poza Kraków</a>
 								</div>
 								<div class="price-dots">
 									<span class="separator-dots"></span>
@@ -359,10 +360,14 @@
 								harum officia eaque nobis ut.</p>
 						</div>
 
+						
+
+
+
 						<div class="col-lg-6 price-wrap">
 							<div class="price-header">
 								<div class="price-name">
-									<a href="#" class="color">Każde 10 minut oczekiwania</a>
+									<a>Każde 10 minut oczekiwania</a>
 								</div>
 								<div class="price-dots">
 									<span class="separator-dots"></span>
@@ -372,12 +377,12 @@
 							<p class="price-desc">Pierwsze 10 minut oczekiwania na klienta jest darmowe.</p>
 						</div>
 
-						<div class="w-100 clear"></div>
+
 
 						<div class="col-lg-6 price-wrap">
 							<div class="price-header">
 								<div class="price-name">
-									<a href="#" class="color">Dowóz alkoholu na terenie Krakowa</a>
+									<a>Dowóz alkoholu na terenie Krakowa</a>
 								</div>
 								<div class="price-dots">
 									<span class="separator-dots"></span>
@@ -388,24 +393,81 @@
 								harum officia eaque nobis ut.</p>
 						</div>
 
+
+
+
+
+
 						<div class="col-lg-6 price-wrap">
 							<div class="price-header">
 								<div class="price-name">
-									<a href="#" class="color">Transfer lotniskowy</a>
+									<a><span class="d-none d-md-inline">Transfer </span>Kraków -> Balice</a>
 								</div>
 								<div class="price-dots">
 									<span class="separator-dots"></span>
 								</div>
-								<div class="price-price color">100-700zł</div>
+								<div class="price-price color">100zł</div>
 							</div>
-							<p class="price-desc">Cena ustalana indywidualnie.</p>
+						</div>
+
+						<div class="col-lg-6 price-wrap">
+							<div class="price-header">
+								<div class="price-name">
+									<a><span class="d-none d-md-inline">Transfer </span>Kraków -> Pyrzowice</a>
+								</div>
+								<div class="price-dots">
+									<span class="separator-dots"></span>
+								</div>
+								<div class="price-price color">250zł</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 price-wrap">
+							<div class="price-header">
+								<div class="price-name">
+									<a><span class="d-none d-md-inline">Transfer </span>Kraków -> Warszawa</a>
+								</div>
+								<div class="price-dots">
+									<span class="separator-dots"></span>
+								</div>
+								<div class="price-price color">600zł</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 price-wrap">
+							<div class="price-header">
+								<div class="price-name">
+									<a><span class="d-none d-md-inline">Transfer </span>Kraków -> Wrocław</a>
+								</div>
+								<div class="price-dots">
+									<span class="separator-dots"></span>
+								</div>
+								<div class="price-price color">650zł</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 price-wrap">
+							<div class="price-header">
+								<div class="price-name">
+									<a><span class="d-none d-md-inline">Transfer </span>Kraków -> Gdańsk</a>
+								</div>
+								<div class="price-dots">
+									<span class="separator-dots"></span>
+								</div>
+								<div class="price-price color">1000zł</div>
+							</div>
 						</div>
 
 						<div class="w-100 clear"></div>
 
+						<div class="price color text-smaller">
+							<p>*ceny usług niewymienionych w cenniku ustalamy indywidualnie dla klienta. </br>
+								**wystawiamy fakturę VAT</p>
+						</div>
+
 					</div>
 
-				</div>
+
 			</div>
 			<div class="line"></div>
 			<div id="regulamin" class="container">
@@ -416,7 +478,9 @@
 						<h3 class="center">Regulamin</h3>
 						<div></div>
 
-						<p style="font-size: 11px;">1. Słownik pojęć: </br>
+						<p style="font-size: 11px;">
+							Celem Serwisu jest umożliwienie Użytkownikom dostępu, za jego pośrednictwem, do korzystania z usług wykonywanych przez kierowcę (dalej: "Szofer") polegających na odprowadzeniu Pojazdu z jednego punktu do drugiego na zlecenie i na rzecz Użytkownika.</br>
+							1. Słownik pojęć: </br>
 							a) Użytkownik – podmiot zlecający, za pośrednictwem Serwisu, odprowadzenie pojazdu przez
 							Szofera z jednego punktu do drugiego oraz dysponujący tytułem prawnym do w/w pojazdu,</br>
 
@@ -478,22 +542,54 @@
 			</div>
 			<div class="line"></div>
 
-			<div id="oc-clients-full" class="owl-carousel image-carousel carousel-widget" data-margin="30"
-				data-nav="false" data-loop="true" data-autoplay="5000" data-pagi="false" data-items-xs="2"
-				data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
+			<div id="oc-clients-full" class="owl-carousel image-carousel carousel-widget" data-margin="100"
+				data-nav="false" data-loop="true" data-autoplay="5000" data-pagi="false" data-items-xs="1"
+				data-items-sm="1" data-items-md="2" data-items-lg="3" data-items-xl="3" data-stage-padding="50">
 
-				<a href="#"><img src="images/clients/1.png" alt="Clients"></a>
-				<a href="#"><img src="images/clients/2.png" alt="Clients"></a>
-				<a href="#"><img src="images/clients/3.png" alt="Clients"></a>
-				<a href="#"><img src="images/clients/4.png" alt="Clients"></a>
-				<a href="#"><img src="images/clients/5.png" alt="Clients"></a>
-				<a href="#"><img src="images/clients/6.png" alt="Clients"></a>
-				<a href="#"><img src="images/clients/7.png" alt="Clients"></a>
-				<a href="#"><img src="images/clients/8.png" alt="Clients"></a>
-				<a href="#"><img src="images/clients/9.png" alt="Clients"></a>
-				<a href="#"><img src="images/clients/10.png" alt="Clients"></a>
-				<a href="#"><img src="images/clients/11.png" alt="Clients"></a>
-				<a href="#"><img src="images/clients/12.png" alt="Clients"></a>
+				<div class="oc-item">
+					<div class="feature-box testimonial fbox-center fbox-bg">
+						<div class="fbox-icon">
+							<a href="#"><img src="images/clients/1.jpg" alt="Featured Box Image"></a>
+						</div>
+						<div class="fbox-content">
+							<h4 class="mb-0"><a class="text-dark" href="#">Marco</a></h4>
+							<p class="text-smaller font-primary font-italic mb-0">"Chłop mnie tak przewiózł że dalej suty stoją."</p>
+						</div>
+					</div>
+				</div>
+				<div class="oc-item">
+					<div class="feature-box testimonial fbox-center fbox-bg">
+						<div class="fbox-icon">
+							<a href="#"><img src="images/clients/2.jpg" alt="Featured Box Image"></a>
+						</div>
+						<div class="fbox-content">
+							<h4 class="mb-0"><a class="text-dark" href="#">Marcel</a></h4>
+							<p class="text-smaller font-primary font-italic mb-0">"Zatwierdzam."</p>
+						</div>
+					</div>
+				</div>
+				<div class="oc-item">
+					<div class="feature-box testimonial fbox-center fbox-bg">
+						<div class="fbox-icon">
+							<a href="#"><img src="images/clients/3.jpg" alt="Featured Box Image"></a>
+						</div>
+						<div class="fbox-content">
+							<h4 class="mb-0"><a class="text-dark" href="#">Dominik</a></h4>
+							<p class="text-smaller font-primary font-italic mb-0">"Ebe ebe."</p>
+						</div>
+					</div>
+				</div>
+				<div class="oc-item">
+					<div class="feature-box testimonial fbox-center fbox-bg">
+						<div class="fbox-icon">
+							<a href="#"><img src="images/clients/4.jpg" alt="Featured Box Image"></a>
+						</div>
+						<div class="fbox-content">
+							<h4 class="mb-0"><a class="text-dark" href="#">Baśka</a></h4>
+							<p class="text-smaller font-primary font-italic mb-0">"Zajebisty kierowca w chuj."</p>
+						</div>
+					</div>
+				</div>
 
 			</div>
 
@@ -641,59 +737,9 @@
 				<div class="row col-mb-30">
 
 					<div class="col-md-6 text-center text-md-left">
-						Copyrights &copy; 2020 All Rights Reserved by Canvas Inc.<br>
-						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+						Copyrights &copy; 2021 All Rights Reserved.<br>
 					</div>
 
-					<div class="col-md-6 text-center text-md-right">
-						<div class="d-flex justify-content-center justify-content-md-end">
-							<a href="#" class="social-icon si-small si-borderless si-facebook">
-								<i class="icon-facebook"></i>
-								<i class="icon-facebook"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-twitter">
-								<i class="icon-twitter"></i>
-								<i class="icon-twitter"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-gplus">
-								<i class="icon-gplus"></i>
-								<i class="icon-gplus"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-pinterest">
-								<i class="icon-pinterest"></i>
-								<i class="icon-pinterest"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-vimeo">
-								<i class="icon-vimeo"></i>
-								<i class="icon-vimeo"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-github">
-								<i class="icon-github"></i>
-								<i class="icon-github"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-yahoo">
-								<i class="icon-yahoo"></i>
-								<i class="icon-yahoo"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-linkedin">
-								<i class="icon-linkedin"></i>
-								<i class="icon-linkedin"></i>
-							</a>
-						</div>
-
-						<div class="clear"></div>
-
-						<i class="icon-envelope2"></i> info@canvas.com <span class="middot">&middot;</span> <i
-							class="icon-headphones"></i> +1-11-6541-6369 <span class="middot">&middot;</span> <i
-							class="icon-skype2"></i> CanvasOnSkype
-					</div>
 
 				</div>
 

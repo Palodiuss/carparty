@@ -5,6 +5,10 @@
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
 
+html {
+	scroll-behavior: smooth;
+}
+
 
 /*	Pricing
 -----------------------------------------------------------------*/

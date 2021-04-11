@@ -159,3 +159,7 @@ a.anchor {
 		height: 300px;
 	}
 	}
+
+	.grecaptcha-badge { 
+		visibility: hidden;
+	}

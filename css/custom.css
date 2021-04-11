@@ -134,4 +134,28 @@ a.anchor {
 	a.anchor {
 		top: -20px;
 	}
+	.second-logo {
+		margin: auto;
+		margin-bottom: 30px;
+		width: 200px;
+		height: 200px;
+	}
 }
+
+
+
+@media (min-width: 768px){
+.second-logo {
+	margin: auto;
+	width: 250px;
+	height: 250px;
+}
+}
+
+@media (min-width: 992px){
+	.second-logo {
+		margin-left: 100px;
+		width: 300px;
+		height: 300px;
+	}
+	}

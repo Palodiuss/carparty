@@ -19,7 +19,6 @@
 	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 	<link rel="stylesheet" href="css/colors.css" type="text/css" />
@@ -51,7 +50,7 @@
 						<div id="logo">
 							<a href="index.html" class="standard-logo">
 								<img src="images/logo-car.svg" alt="Car" width="100px" style="margin-right: 10px;"></a>
-								<img src="images/logo-name.svg" alt="Logo" width="150px"></a>
+							<img src="images/logo-name.svg" alt="Logo" width="150px"></a>
 							<a href="#header">
 							</a>
 						</div><!-- #logo end -->
@@ -150,8 +149,7 @@
 								</div>
 							</div>
 							<div class="video-wrap no-placeholder">
-								<video poster="images/videos/explore-poster.jpg" preload="auto" loop autoplay muted
-									playsinline>
+								<video preload="auto" loop autoplay muted playsinline>
 									<source src='images/videos/video.mp4' type='video/mp4' />
 								</video>
 								<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
@@ -204,9 +202,11 @@
 								Jeśli nie czujesz się na siłach by wrócić samochodem do domu, wypiłeś alkohol, źle
 								się czujesz i potrzebujesz by ktoś wrócił nim razem z Tobą i wyręczył Cię w
 								prowadzeniu go... Idealnie trafiłeś do Car Party! Nasze usługi polegają na
-								odwiezieniu Twojego auta bezpiecznie pod wskazany adres. W naszej ofercie posiadamy wyłącznie samochody klasy <strong>premium</strong> takich jak: Porsche, Mercedes, Audi, Jaguar.</p>
+								odwiezieniu Twojego auta bezpiecznie pod wskazany adres. W naszej ofercie posiadamy
+								wyłącznie samochody klasy <strong>premium</strong> takich jak: Porsche, Mercedes, Audi,
+								Jaguar.</p>
 							<img src="images/logo-full.svg" alt="Image" width="350">
-							
+
 						</div>
 						<div class="col-md-3 col-6 d-none d-md-block">
 							<img src="images/about2.jpg" alt="Image">
@@ -406,7 +406,8 @@
 							</div>
 							<div class="price-price color">100zł</div>
 						</div>
-						<p class="price-desc">Wszystkie nasze transfery wykonujemy samochodami klasy <strong>premium</strong>.</p>
+						<p class="price-desc">Wszystkie nasze transfery wykonujemy samochodami klasy
+							<strong>premium</strong>.</p>
 					</div>
 
 					<div class="col-lg-6 price-wrap">
@@ -592,9 +593,12 @@
 											<strong>Siedziba:</strong><br>
 											Kraków, Małopolska 30-682<br>
 										</address>
-										<abbr title="Phone Number 1"><strong>Telefon 1:</strong></abbr> (+48) 507 834 505<br>
-										<abbr title="Phone number 2"><strong>Telefon 2:</strong></abbr> (+48) 507 837 133<br>
-										<abbr title="Email Address"><strong>Email:</strong></abbr> infocarparty@gmail.com
+										<abbr title="Phone Number 1"><strong>Telefon 1:</strong></abbr> (+48) 507 834
+										505<br>
+										<abbr title="Phone number 2"><strong>Telefon 2:</strong></abbr> (+48) 507 837
+										133<br>
+										<abbr title="Email Address"><strong>Email:</strong></abbr>
+										infocarparty@gmail.com
 									</div>
 
 								</div>
@@ -637,7 +641,8 @@
 								<div class="widget subscribe-widget clearfix">
 									<h5>Masz pytania? Podaj swój email a odezwiemy się do ciebie</h5>
 									<div class="widget-subscribe-form-result"></div>
-									<form target="_blank" id="widget-subscribe-form" action="https://formsubmit.co/7e3a0b7233ac11b4ba5c878c8d4d6200" method="POST"
+									<form target="_blank" id="widget-subscribe-form"
+										action="https://formsubmit.co/7e3a0b7233ac11b4ba5c878c8d4d6200" method="POST"
 										class="mb-0">
 										<input type="hidden" name="_captcha" value="false">
 										<div class="input-group mx-auto">
@@ -648,7 +653,9 @@
 												name="widget-subscribe-form-phone" class="form-control"
 												placeholder="Podaj swój nr telefonu" required>
 											<div class="input-group-append">
-												<button class="btn btn-success" type="submit">Wyślij</button>
+												<!-- <button class="btn btn-success" type="submit">Wyślij</button> -->
+												<button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key"
+													data-callback='onSubmit' data-action='submit'>Submit</button>
 											</div>
 										</div>
 									</form>
@@ -661,7 +668,8 @@
 
 									<div class="row">
 										<div class="col-6 col-md-12 col-lg-6 clearfix">
-											<a href="https://www.instagram.com/carparty_official" target="_blank" class="social-icon si-dark si-colored si-instagram mb-0"
+											<a href="https://www.instagram.com/carparty_official" target="_blank"
+												class="social-icon si-dark si-colored si-instagram mb-0"
 												style="margin-right: 10px;">
 												<i class="icon-instagram"></i>
 												<i class="icon-instagram"></i>
@@ -711,6 +719,12 @@
 	============================================= -->
 	<script src="js/jquery.js"></script>
 	<script src="js/plugins.min.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+	<script>
+		function onSubmit(token) {
+			document.getElementById("demo-form").submit();
+		}
+	</script>
 
 	<!-- Footer Scripts
 	============================================= -->

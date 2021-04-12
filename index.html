@@ -726,8 +726,12 @@
 	<script src="https://www.google.com/recaptcha/api.js"></script>
 	<script>
 		function onSubmit(token) {
-			document.getElementById("widget-subscribe-form").submit();
-			document.getElementById("widget-subscribe-form").reset();
+			let form = document.getElementById("widget-subscribe-form");
+			console.log(form);
+			let input = document.getElementById("widget-subscribe-form-phone");
+			console.log(input);
+			form.reset();
+			//document.getElementById("widget-subscribe-form").reset();
 		}
 	</script>
 

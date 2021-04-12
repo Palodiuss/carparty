@@ -61,6 +61,10 @@
   border-color: #E42C3E;
 }
 
+.form-control.success {
+  border-color: #13a700;
+}
+
 label {
   display: inline-block;
   font-size: 13px;

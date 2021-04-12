@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="css/animate.css" type="text/css" /> 
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 
 	<link rel="stylesheet" href="css/colors.css" type="text/css" />
 
@@ -648,11 +648,12 @@
 											</div>
 											<input type="tel" id="widget-subscribe-form-phone"
 												name="widget-subscribe-form-phone" class="form-control"
-												placeholder="xxx-xxx-xxx" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+												placeholder="xxx-xxx-xxx">
 											<div class="input-group-append">
-												<button class="btn btn-success g-recaptcha"
+												<!-- <button class="btn btn-success g-recaptcha"
 													data-sitekey="6LdX6KUaAAAAAKiy-0ChqvrtrDFWI8wkKFKB0EYC"
-													data-callback='onSubmit' data-action='submit'>Wyślij</button>
+													data-callback='onSubmit' data-action='submit'>Wyślij</button> -->
+												<button class="btn btn-success">Wyślij</button>
 											</div>
 										</div>
 									</form>
@@ -725,13 +726,22 @@
 	<script src="js/plugins.min.js"></script>
 	<script src="https://www.google.com/recaptcha/api.js"></script>
 	<script>
+		const isPhoneValid = phone => /^\d{9}$/.test(phone)
 		function onSubmit(token) {
 			let form = document.getElementById("widget-subscribe-form");
-			console.log(form);
 			let input = document.getElementById("widget-subscribe-form-phone");
-			console.log(input);
+
+			if (isPhoneValid(input.value.trim())) {
+				form.submit();
+				input.classList.remove('error');
+				input.classList.add('success');	
+				input.placeholder = "Sukces";
+			} else {
+				input.classList.add('error');
+				input.classList.remove('success');
+				input.placeholder = "Błąd, podaj numer w formacie 9 cyfr";
+			}
 			form.reset();
-			//document.getElementById("widget-subscribe-form").reset();
 		}
 	</script>
 

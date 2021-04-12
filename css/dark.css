@@ -1766,12 +1766,17 @@ body #side-panel.dark {
 .dark fieldset[disabled] .sm-form-control:not(.not-dark) { background-color: rgba(255,255,255,0.1); }
 
 .dark .input-group .form-control.error:not(.not-dark) { color: #E42C3E; }
+.dark .input-group .form-control.success:not(.not-dark) { color: #13a700; }
 
 .dark .sm-form-control.error:not(.not-dark) { border-color: #E42C3E !important; }
 
 .dark .form-control.error:not(.not-dark)::-moz-placeholder { color: rgba(228,44,62,0.6); }
 .dark .form-control.error:not(.not-dark):-ms-input-placeholder { color: rgba(228,44,62,0.6); }
 .dark .form-control.error:not(.not-dark)::-webkit-input-placeholder { color: rgba(228,44,62,0.6); }
+
+.dark .form-control.success:not(.not-dark)::-moz-placeholder { color: #13a700; }
+.dark .form-control.success:not(.not-dark):-ms-input-placeholder { color: #13a700; }
+.dark .form-control.success:not(.not-dark)::-webkit-input-placeholder { color: #13a700; }
 
 .dark .dropdown-menu {
 	background-color: #333;

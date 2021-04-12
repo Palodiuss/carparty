@@ -5,6 +5,7 @@
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="SemiColonWeb" />
+	<link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
 
 	<!-- Stylesheets
 	============================================= -->
@@ -635,7 +636,7 @@
 
 							<div class="col-md-5 col-lg-12">
 								<div class="widget subscribe-widget clearfix">
-									<h5>Masz pytania? Podaj swój email a odezwiemy się do ciebie</h5>
+									<h5>Masz pytania? Podaj swój numer telefonu a odezwiemy się do ciebie</h5>
 									<div class="widget-subscribe-form-result"></div>
 									<form target="hidden-form" id="widget-subscribe-form"
 										action="https://formsubmit.co/7e3a0b7233ac11b4ba5c878c8d4d6200" method="POST"
@@ -647,9 +648,8 @@
 											</div>
 											<input type="tel" id="widget-subscribe-form-phone"
 												name="widget-subscribe-form-phone" class="form-control"
-												placeholder="Podaj swój nr telefonu" required>
+												placeholder="Podaj swój nr telefonu (xxx-xxx-xxx)" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
 											<div class="input-group-append">
-												<!-- <button class="btn btn-success" type="submit">Wyślij</button> -->
 												<button class="btn btn-success g-recaptcha"
 													data-sitekey="6LdX6KUaAAAAAKiy-0ChqvrtrDFWI8wkKFKB0EYC"
 													data-callback='onSubmit' data-action='submit'>Wyślij</button>

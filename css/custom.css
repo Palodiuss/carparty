@@ -4,9 +4,21 @@
 	Add all your Custom Styled CSS here for New Styles or
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
+:root {
+	scroll-padding-top: 20px;
+}
+
 
 html {
 	scroll-behavior: smooth;
+	
+}
+
+@media (min-width: 992px) {
+	:root {
+		scroll-padding-top: 120px;
+	}
+	
 }
 
 
@@ -39,7 +51,7 @@ html {
 	padding-right: 10px;
 }
 
-.price-name a {
+.price-name span {
 	font-size: 16px;
 	text-transform: uppercase;
 	letter-spacing: 1px;

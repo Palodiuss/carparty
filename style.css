@@ -5931,6 +5931,15 @@ body:not(.has-plugin-html5video) .video-wrap video {
 	margin-bottom: 0;
 }
 
+.slider-caption h1 {
+	font-size: 4rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 0;
+}
+
 .slider-caption p {
 	margin-top: 30px;
 	margin-bottom: 10px;
@@ -5938,6 +5947,10 @@ body:not(.has-plugin-html5video) .video-wrap video {
 }
 
 @media (max-width: 991.98px) {
+
+	.swiper_wrapper .slider-caption h1 {
+		font-size: 5.5vw;
+	}
 
 	.swiper_wrapper .slider-caption h2 {
 		font-size: 5.5vw;
